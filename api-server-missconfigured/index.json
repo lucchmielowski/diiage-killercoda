@@ -10,6 +10,7 @@
         "title": "Fix the kubernetes API server",
         "text": "step1/text.md",
         "background": "step1/background.sh",
+        "foreground": "step1/foreground.sh",
         "verify": "step1/verify.sh"
       }
     ]
