@@ -1,0 +1,20 @@
+{
+  "title": "Mauvaise configuration de l'api-server",
+  "description": "Regler les problemes de l'API server",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Fix the kubernetes API server",
+        "text": "step1/text.md",
+        "background": "step1/background.sh",
+        "verify": "step1/verify.sh"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2node"
+  }
+}
