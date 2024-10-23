@@ -1,13 +1,13 @@
 {
-  "title": "Mauvaise configuration de l'api-server",
-  "description": "Regler les problemes de l'API server",
+  "title": "Réparez kubectl",
+  "description": "Vous ne pouvez plus utiliser kubectl sur votre master, investiguez et corrigez le problème.",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Fix the kubernetes API server",
+        "title": "Fix kubectl",
         "text": "step1/text.md",
         "background": "step1/background.sh",
         "foreground": "step1/foreground.sh",
