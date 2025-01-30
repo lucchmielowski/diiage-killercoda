@@ -1,0 +1,25 @@
+{
+  "title": "DIIAGE Finals - Monitoring Pipeline and Kubernetes Security",
+  "description": "",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Implement monitoring",
+        "text": "step1/text.md",
+        "foreground": "step1/background.sh"
+      }
+    ],
+    "assets": {
+      "host01": [
+        {"file": "/**/*", "target": "/root/exercise"}
+      ]
+    }
+
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-1node-4GB"
+  }
+}

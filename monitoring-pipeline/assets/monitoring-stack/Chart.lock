@@ -1,0 +1,12 @@
+dependencies:
+- name: prometheus
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 27.1.0
+- name: opentelemetry-operator
+  repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+  version: 0.74.3
+- name: prometheus-operator-crds
+  repository: https://prometheus-community.github.io/helm-charts
+  version: 17.0.2
+digest: sha256:27f7abcefaaf08ed412162091fa7425ad63ba3006e5cb7ba9ce4e30e101ef69f
+generated: "2025-01-29T23:16:32.943478+01:00"

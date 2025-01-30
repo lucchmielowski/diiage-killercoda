@@ -1,0 +1,17 @@
+apiVersion: v2
+name: monitoring-stack
+description: A Helm chart for Kubernetes to deploy Prometheus, Grafana, Tempo, Loki, and OpenTelemetry
+version: 0.1.0
+appVersion: "1.0"
+dependencies:
+  - name: prometheus
+    version: "27.1.0"
+    alias: prometheus
+    repository: "https://prometheus-community.github.io/helm-charts"
+  - name: opentelemetry-operator
+    alias: otel
+    version: "0.74.3"
+    repository: "https://open-telemetry.github.io/opentelemetry-helm-charts"
+  - name: prometheus-operator-crds
+    version: "17.0.2"
+    repository: "https://prometheus-community.github.io/helm-charts"

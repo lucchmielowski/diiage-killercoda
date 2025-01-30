@@ -1,0 +1,27 @@
+prometheus:
+  enabled: true
+  alertmanager:
+    enabled: false
+  alertmanagerFiles:
+    alertmanager.yml: ""
+  pushgateway:
+    enabled: false
+  serverFiles:
+    prometheus.yml:
+      scrape_configs:
+        - job_name: 'external-service'
+          static_configs:
+            - targets:
+                - 'main-collector.monitoring:9999'
+
+otel:
+  manager:
+    collectorImage:
+      repository: otel/opentelemetry-collector-contrib
+    extraArgs:
+      - --enable-go-instrumentation=true
+  admissionWebhooks:
+    certManager:
+      enabled: false
+    autoGenerateCert:
+      enabled: true
